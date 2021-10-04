@@ -26,6 +26,10 @@ color:orange;
 width: 100% 
 } 
 }
+.p6{
+  color:rgba(85,85,85,0.628);
+  margin-left: 10px;
+}
 svg{
 margin-top: 155px;
 margin-left: 175px;
