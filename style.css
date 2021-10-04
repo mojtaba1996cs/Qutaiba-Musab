@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+.typewriter{
+margin-right: 0px;
+}
+.typewriter p {
+overflow: hidden;
+white-space: nowrap;
+margin-right: 1900px;
+text-align: center;
+letter-spacing: .15em;
+animation: typing 5s steps(80, end) infinite;
+color:cornsilk;
+animation-delay:22s;
+font-family: faster one;
+font-size: 20px;
+font-weight: bold;
+} 
+@keyframes typing { 
+from { 
+color:orange;
+width:0;
+} 
+to {
+color:orange;
+width: 100% 
+} 
+}
+svg{
+margin-top: 155px;
+margin-left: 175px;
+transform: translate(-50%, -50%);
+    }
+    #draw1{
+        stroke-dasharray: 2000;
+        -webkit-animation: first 30s linear alternate infinite;
+    }
+    @-webkit-keyframes first{
+        0%{
+            stroke-dashoffset:2000;
+        }
+        99%{
+            fill: red;
+        }
+        100%{
+            stroke-dashoffset:0;
+        }
+    }
+    #draw2{
+        stroke-dasharray: 2000;
+        -webkit-animation: second 30s linear alternate infinite;
+        -webkit-animation-delay:3.5s;
+    }
+    @-webkit-keyframes second{
+        0%{
+            stroke-dashoffset:2000;
+            stroke: red;
+        }
+        99%{
+            fill: red;
+        }
+
+        100%{
+            stroke-dashoffset:0;
+        }
+    }
+    #draw3{
+        stroke-dasharray: 2000;
+        -webkit-animation: third 30s linear alternate infinite;
+        -webkit-animation-delay:7.5s;
+    }
+    @-webkit-keyframes third{
+        0%{
+            stroke-dashoffset:2000;
+            stroke: purple;
+        }
+        99%{
+            fill: purple;
+        }
+
+        100%{
+            stroke-dashoffset:0;
+        }
+    }
+    #draw4{
+        stroke-dasharray: 2000;
+        -webkit-animation: fourth 30s linear alternate infinite;
+        -webkit-animation-delay:13.5s;
+    }
+    @-webkit-keyframes fourth{
+        0%{
+            stroke-dashoffset:2000;
+            stroke: brown;
+        }
+        99%{
+            fill: brown;
+        }
+
+        100%{
+            stroke-dashoffset:0;
+        }
+    }
+    #draw5{
+        stroke-dasharray: 2000;
+        -webkit-animation: fifth 30s linear alternate infinite;
+        -webkit-animation-delay:23s;
+    }
+    @-webkit-keyframes fifth{
+        0%{
+            stroke-dashoffset:2000;
+            stroke: brown;
+        }
+        99%{
+            fill: brown;
+        }
+
+        100%{
+            stroke-dashoffset:0;
+        }
+    }
+.text {
+    font-family: 'Satisfy', cursive;
+    text-align:center;
+    font-size: 40px;
+    color: red;
+    animation-name: colorchange;
+    animation-duration: 4s ;
+    animation-iteration-count:infinite ;
+}
+@keyframes colorchange {
+    0% {color: pink; }
+    10% {color: purple; }
+    20% {color: blue; }
+    30% {color: red; }
+    40% {color: green; }
+    50% {color: cyan; }
+    70% {color: orange; }   
+}
+#clab {
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+    height: 100vh;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    font-family: "montserrat",sans-serif;
+    position:fixed;
+    position:absolute;
+    left: 25%;
+    background-color:black;
+    
+}
+
+.loading
+{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box ;
+    border-radius: 50%;
+    border-top: 10px solid #e74c3c;
+    position: relative;
+    margin-top: 40%;
+    animation: a1 2s linear infinite;
+    margin-left:70px;
+}
+
+.loading::before,.loading::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    box-sizing:border-box;
+    border-radius: 50%;
+    
+    
+}
+  .loading::before{
+      border-top: 10px solid #e67e22;
+      transform: rotate(120deg);
+      
+  }
+
+.loading::after{
+border-top:10px solid #3498db;
+transform: rotate(240deg);
+}
+.loading span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    animation: a2 2s linear infinite;
+}
+  #loader {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: #34495e;
+    z-index:19;
+    
+
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: linear-gradient(#03a9f4 ,#c788d1 );
+}
+.card{
+background:#fff;
+border-top:1px solid rgba(255,255,255,0.5);
+backdrop-filter:blur(15px);
+box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.1);
+border-radius: 15px;
+            
+        }
+
+
+.logo{
+    font-family: faster one;
+}
+
+header{
+    background:gray;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.logo-and-bar{
+    display: flex;
+    width: 100%;
+}
+
+
+.hamburger{
+    padding-left: 20px;
+}
+
+.logo{
+    flex: 1;
+    height: 100px;
+    text-align: center;
+}
+
+.logo , .hamburger{
+    font-size: 30px;
+    line-height: 80px;
+}
+
+
+ul{
+    position: absolute;
+    background: #2c3e50;
+    width: 100%;
+    height:3 if00px;
+    
+    top: 100px;
+    left: -100%;
+    transition:all .5s ease-in;
+    text-align: center;
+    
+}
+
+ul li{
+    list-style: none;
+    margin: 50px 0;
+    line-height: 30px;font-family:"Nosifer";
+}
+
+
+ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+     font-family:"Nosifer";
+}
+#check{
+    display: none;
+}
+.logo-and-bar #check:checked ~ ul{
+    left: 0;
+}
+
+
+main{
+    margin: 10px;
+}
+
+main h2{
+    font-weight: 500;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;font-family: 'Quicksand', sans-serif;
+}
+
+main .p1{
+    padding: 5px;
+    color: #696969;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #f6f6f6;font-family:baloo;
+}
+
+main .p2{
+    font-size: 20px;
+    line-height: 1.5;font-family:baloo;
+}
+
+
+/* grid part */
+
+.grid{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-top:10px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 13px;
+    grid-template-areas: 
+    "name name"
+    "image image"
+    "h0 p0"
+    "h1 p1"
+    "h2 p2"
+    "h3 p3"
+    "h4 p4"
+    "h5 p5";
+
+
+    height:280px;
+    width:calc(100% - 20px);
+    background:rgba(115,15,246,0.778);
+    overflow: hidden;
+    border:  .5px solid #d4d4d4; font-family:"New rocker";
+}
+.grid2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-top:10px ;
+    display: grid;
+    width:calc(100% - 20px);
+    overflow: hidden;
+    height: 300px;
+}
+.grid > h3{
+    grid-area: name;
+    text-align: center;
+    border-bottom: .5px solid #d4d4d4;
+}
+.grid > img{
+    margin-left: 20px;
+    grid-area: image;
+}
+
+.h0 {
+    grid-area: h0;font-family: 'Stick No Bills', sans-serif;
+}
+.p0{
+    grid-area: p0;font-family:baloo;
+}
+
+.h1 {
+    grid-area: h1;font-family: 'Stick No Bills', sans-serif;
+}
+.p1{
+    grid-area: p1;font-family:baloo;
+}
+.h2 {
+    grid-area: h2;font-family: 'Stick No Bills', sans-serif;
+}
+.p2{
+    grid-area: p2;font-family:baloo;
+}
+
+.h3 {
+    grid-area: h3;font-family: 'Stick No Bills', sans-serif;
+}
+.p3{
+    grid-area: p3;font-family:baloo;
+}
+
+.h4 {
+    grid-area: h4;font-family: 'Stick No Bills', sans-serif;
+}
+.p4{
+    grid-area: p4;font-family:baloo;
+}
+
+.h5 {
+    grid-area: h5;font-family: 'Stick No Bills', sans-serif;
+}
+.p5{
+    grid-area: p5;font-family:baloo;
+}
+
+
+/*  Border to every element*/
+.s{
+    padding: 10px;
+    line-height: 1.5;
+    border-top:  .5px solid #d4d4d4;
+}
+
+/* another section */
+.last-section{
+    margin: 10px;font-family:baloo;
+}
+
+.last-section p{
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: black;
+    color: white;font-family:baloo;
+}
+footer h4{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+
+/* Desktop version */
+
+@media (min-width:900px)
+{
+    .grid img{
+        margin-left: 40vw;
+
+    }
+}
+
+#p{ font-family:baloo;}
